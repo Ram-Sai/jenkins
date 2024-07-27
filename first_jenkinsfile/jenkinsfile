@@ -1,11 +1,13 @@
 pipeline {
-  agent any
-  stages {
-    stage("Directory Creation") {
-      steps {
-        sh 'cd /home/ubuntu && mkdir gitdownload && cd gitdownload'
-      }
-      
+    agent any
+
+    stages {
+        stage('Create Folder') {
+            steps {
+                // Directly create the directory using the mkdir command
+                sh 'mkdir my-new-folder'
+                echo "Directory 'my-new-folder' created."
+            }
+        }
     }
-  }
 }
