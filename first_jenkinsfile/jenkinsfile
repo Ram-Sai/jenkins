@@ -11,9 +11,3 @@ pipeline {
     }
   }
 }
-
-
-
-stage 1 create a folder at 
-and then git pull
-then run the code 
