@@ -1,0 +1,19 @@
+pipeline {
+  agent none
+  stages {
+    stage("Directory Creation") {
+      steps {
+        sh 'cd /home/ubuntu && mkdir gitdownload && cd gitdownload'
+      }
+      agent {
+        docker {image 'maven:3.8.1-adoptopenjdk-11' }
+      }
+    }
+  }
+}
+
+
+
+stage 1 create a folder at 
+and then git pull
+then run the code 
