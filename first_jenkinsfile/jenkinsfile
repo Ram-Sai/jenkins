@@ -5,9 +5,7 @@ pipeline {
       steps {
         sh 'cd /home/ubuntu && mkdir gitdownload && cd gitdownload'
       }
-      agent {
-        docker {image 'maven:3.8.1-adoptopenjdk-11' }
-      }
+      
     }
   }
 }
